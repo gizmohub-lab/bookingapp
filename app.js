@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const Booking = require('./models/Booking');
 require('dotenv').config(); // Load environment variables
+app.set('views', path.join(__dirname, 'views'));
 
 const app = express();
 const port = process.env.PORT || 3000; // Use PORT from .env or fallback to 3000
