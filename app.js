@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
-const Booking = require('./models/Booking');
+const Booking = require('./models/booking');
 require('dotenv').config(); // Load environment variables
 app.set('views', path.join(__dirname, 'views'));
 
