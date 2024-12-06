@@ -4,10 +4,10 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const Booking = require('./models/booking');
 require('dotenv').config(); // Load environment variables
-app.set('views', path.join(__dirname, 'views'));
+
 const app = express();
 const port = process.env.PORT || 3000; // Use PORT from .env or fallback to 3000
-
+app.set('views', path.join(__dirname, 'views'));
 // Database connection
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
