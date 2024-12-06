@@ -6,6 +6,7 @@ const Booking = require('./models/booking');
 require('dotenv').config(); // Load environment variables
 app.set('views', path.join(__dirname, 'views'));
 
+
 const app = express();  // Initialize app here
 
 const app = express();
